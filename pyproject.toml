@@ -1,0 +1,21 @@
+[project]
+name = "C14H22O-bot"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "C14H22O", email = "160833462+C14H22O@users.noreply.github.com"},
+]
+dependencies = [
+    "nonebot2[aiohttp]>=2.2.1",
+    "nonebot-adapter-qq>=1.4.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_fishing"]
