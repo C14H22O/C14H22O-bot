@@ -10,7 +10,7 @@ _✨ 一个没有什么用的QQ官方bot ✨_
 
 ## 简介
 
-内置[钓鱼插件](https://github.com/C14H22O/nonebot-plugin-fishing)的机器人，加上一点可能有用~~（就是没用）~~的功能。
+内置[钓鱼插件](https://github.com/C14H22O/nonebot-plugin-fishing)的机器人，加上一点可能有用（就是没用）的功能。
 
 ## 部署
 
