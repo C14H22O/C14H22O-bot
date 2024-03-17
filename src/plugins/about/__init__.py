@@ -7,7 +7,7 @@ from nonebot import __version__
 nonebot_version = __version__
 about = on_command("about", aliases={"关于"})
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 ABOUT = f"""
 C14H22O-bot v{VERSION}
 Powered by Nonebot v{nonebot_version}"""

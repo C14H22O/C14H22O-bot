@@ -1,6 +1,6 @@
 [project]
 name = "C14H22O-bot"
-version = "0.1.0"
+version = "0.1.1"
 description = "一个没有什么用的QQ官方bot"
 authors = [
     {name = "C14H22O", email = "160833462+C14H22O@users.noreply.github.com"},
