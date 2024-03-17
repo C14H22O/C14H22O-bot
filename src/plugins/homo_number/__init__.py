@@ -8,13 +8,16 @@ import math
 import re
 
 # 移植自 https://github.com/itorr/homo
-
+NUMBER_NOT_FOUND_TIP = """请在指令中添加参数
+如: /臭数字 114514"""
 homo_number = on_command("homonumber", aliases={"臭数字"}, priority=5, block=True)
 
 
 @homo_number.handle()
 async def _(arg: Message = CommandArg()):
     number = arg.extract_plain_text()
+    if number == "":
+        await homo_number.finish(NUMBER_NOT_FOUND_TIP)
     message = demolish(number)
     if message == '':
         message = '需要一个数字，这事数字吗（恼）'
