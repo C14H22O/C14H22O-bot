@@ -11,6 +11,7 @@ nonebot_version = __version__
 about = on_command("about", aliases={"关于"})
 
 VERSION = "0.1.2"
+URL = "https://github.com/C14H22O/C14H22O-bot"
 config = get_plugin_config(Config)
 
 
@@ -24,6 +25,27 @@ async def _about():
                    ]
     })
     keyboard = MessageKeyboard.model_validate({
-        "id": config.keyboard_template_id
+        "content": {
+            "rows": [
+                {
+                    "buttons": [
+                        {
+                            "id": "1",
+                            "render_data": {
+                                "label": "Github",
+                                "visited_label": "Github"
+                            },
+                            "action": {
+                                "type": 0,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": URL
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
     })
     await about.finish(Message([MessageSegment.markdown(markdown), MessageSegment.keyboard(keyboard)]))
