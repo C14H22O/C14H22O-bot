@@ -42,6 +42,20 @@ async def _about():
                                 },
                                 "data": URL
                             }
+                        },
+                        {
+                            "id": "2",
+                            "render_data": {
+                                "label": "友链",
+                                "visited_label": "友链"
+                            },
+                            "action": {
+                                "type": 2,
+                                "permission": {
+                                    "type": 2
+                                },
+                                "data": "/友链"
+                            }
                         }
                     ]
                 }
