@@ -6,7 +6,7 @@ authors = [
     {name = "C14H22O", email = "160833462+C14H22O@users.noreply.github.com"},
 ]
 dependencies = [
-    "nonebot2[websockets]>=2.2.1",
+    "nonebot2[aiohttp]>=2.2.1",
     "nonebot-adapter-qq>=1.4.2",
     "nonebot-plugin-fishing>=0.2.1",
 ]
