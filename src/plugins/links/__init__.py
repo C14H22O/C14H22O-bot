@@ -12,16 +12,10 @@ add_link_command = on_command("/add_link", aliases={"添加友链"})
 @links.handle()
 async def _links():
     markdown = MessageMarkdown.model_validate({
-        "custom_template_id": config.markdown_template_id,
+        "custom_template_id": config.markdown_link_template_id,
         "params": [
             {
-                "key": "bot_name", "values": ["C14H22O-bot"]
-            },
-            {
-                "key": "version", "values": ["1.14.514"]
-            },
-            {
-                "key": "nonebot_version", "values": ["19.19.8.10"]
+                "key": ".t1", "values": ["友链"]
             }
         ]
     })

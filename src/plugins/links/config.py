@@ -5,7 +5,7 @@ from nonebot import get_plugin_config
 
 
 class Config(BaseModel):
-    markdown_template_id: str
+    markdown_link_template_id: str
     links: List
 
 
