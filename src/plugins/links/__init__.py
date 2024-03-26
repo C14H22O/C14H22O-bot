@@ -15,7 +15,7 @@ async def _links():
         "custom_template_id": config.markdown_link_template_id,
         "params": [
             {
-                "key": ".t1", "values": ["友链"]
+                "key": "t1", "values": ["友链"]
             }
         ]
     })
