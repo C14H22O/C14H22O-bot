@@ -17,13 +17,16 @@ config = get_plugin_config(Config)
 
 @about.handle()
 async def _about():
-    markdown = MessageMarkdown.model_validate({
-        "custom_template_id": config.markdown_template_id,
-        "params": [{"key": "bot_name", "values": ["C14H22O-bot"]},
-                   {"key": "version", "values": [VERSION]},
-                   {"key": "nonebot_version", "values": [nonebot_version]}
-                   ]
-    })
+    markdown = MessageMarkdown.model_validate(
+        {
+            "custom_template_id": config.markdown_template_id,
+            "params": [
+                {"key": "bot_name", "values": ["C14H22O-bot"]},
+                {"key": "version", "values": [VERSION]},
+                {"key": "nonebot_version", "values": [nonebot_version]}
+            ]
+        }
+    )
     keyboard = MessageKeyboard.model_validate({
         "content": {
             "rows": [
@@ -54,6 +57,7 @@ async def _about():
                                 "permission": {
                                     "type": 2
                                 },
+                                "enter": True,
                                 "data": "/友链"
                             }
                         }
