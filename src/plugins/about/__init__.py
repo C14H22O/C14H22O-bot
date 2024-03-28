@@ -66,4 +66,8 @@ async def _about():
             ]
         }
     })
-    await about.finish(Message([MessageSegment.markdown(markdown), MessageSegment.keyboard(keyboard)]))
+    await about.finish(
+        Message(
+            [MessageSegment.markdown(markdown), MessageSegment.keyboard(keyboard)]
+        )
+    )
