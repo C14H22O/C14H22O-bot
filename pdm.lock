@@ -999,8 +999,8 @@ files = [
 
 [[package]]
 name = "nonebot-adapter-qq"
-version = "1.4.2"
-requires_python = ">=3.8,<4.0"
+version = "1.4.3"
+requires_python = "<4.0,>=3.8"
 summary = "QQ adapter for nonebot2"
 groups = ["default"]
 dependencies = [
@@ -1010,8 +1010,8 @@ dependencies = [
     "yarl<2.0.0,>=1.9.0",
 ]
 files = [
-    {file = "nonebot_adapter_qq-1.4.2-py3-none-any.whl", hash = "sha256:1bae0016420140841baad81365a8226f448d89ce8bd375f9ec5dd030e244e1da"},
-    {file = "nonebot_adapter_qq-1.4.2.tar.gz", hash = "sha256:69331998182ecbeec2efa3dee89c63a0d359b93936afa39f158224d96e087c3a"},
+    {file = "nonebot_adapter_qq-1.4.3-py3-none-any.whl", hash = "sha256:49fe5c6db2d1654c3e75b13088ae37931606dab4e994bcf447c35d06a98152cd"},
+    {file = "nonebot_adapter_qq-1.4.3.tar.gz", hash = "sha256:f4777cd20ca8ecd4d35b4e3844e151269181faf2cda1e5eee319a90277ded299"},
 ]
 
 [[package]]
