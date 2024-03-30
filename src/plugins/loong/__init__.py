@@ -1,4 +1,5 @@
 from nonebot import on_command
+from nonebot_plugin_alconna.uniseg import Image, UniMessage
 from nonebot.adapters.qq import Message, MessageSegment
 from nonebot.adapters.qq.models import MessageKeyboard, MessageMarkdown
 from nonebot.adapters.qq.exception import ActionFailed
@@ -25,8 +26,7 @@ async def _loong():
         {
             "custom_template_id": config.markdown_link_template_id,
             "params": [
-                {"key": "t1", "values": ["![img #200 #200"]},
-                {"key": "t2", "values": ["](%s)" % image]},
+                {"key": "t1", "values": ["再来一张"]}
             ]
         }
     )
@@ -57,6 +57,9 @@ async def _loong():
         }
     })
     try:
+        await loong.send(
+            await UniMessage(Image(url=image)).export()
+        )
         await loong.finish(
             Message(
                 [MessageSegment.markdown(markdown), MessageSegment.keyboard(keyboard)]
