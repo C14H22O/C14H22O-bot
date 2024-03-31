@@ -1,3 +1,4 @@
+from nonebot.plugin import PluginMetadata
 from nonebot import on_command
 from nonebot import __version__
 from nonebot import get_plugin_config
@@ -6,6 +7,15 @@ from nonebot.adapters.qq import Message
 from nonebot.adapters.qq import MessageSegment
 
 from .config import Config
+
+__plugin_meta__ = PluginMetadata(
+    name="关于插件",
+    description="关于 C14H22O-bot",
+    usage="输入 /关于 获取机器人关于信息",
+    type="application",
+    config=Config,
+    supported_adapters={"~qq"}
+)
 
 nonebot_version = __version__
 about = on_command("about", aliases={"关于"})

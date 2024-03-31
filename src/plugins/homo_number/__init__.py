@@ -1,6 +1,7 @@
 """
 修改自 https://github.com/HiDolen/nonebot_plugin_homonumber
 """
+from nonebot.plugin import PluginMetadata
 from nonebot import on_command
 from nonebot.adapters import Message
 from nonebot.params import CommandArg
@@ -8,9 +9,23 @@ import math
 import re
 
 # 移植自 https://github.com/itorr/homo
+__plugin_meta__ = PluginMetadata(
+    name="恶臭的数学家",
+    description="恶臭式生成器",
+    usage="输入 /臭数字 数字 以获取恶臭式, 如 /臭数字 1919810",
+    type="application",
+    config=None,
+    supported_adapters=None
+)
+
 NUMBER_NOT_FOUND_TIP = """请在指令中添加参数
 如: /臭数字 114514"""
-homo_number = on_command("homonumber", aliases={"臭数字"}, priority=5, block=True)
+homo_number = on_command(
+    "homonumber",
+    aliases={"臭数字"},
+    priority=5,
+    block=True
+)
 
 
 @homo_number.handle()

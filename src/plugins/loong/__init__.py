@@ -1,3 +1,4 @@
+from nonebot.plugin import PluginMetadata
 from nonebot import on_command
 from nonebot_plugin_alconna.uniseg import Image, UniMessage
 from nonebot.adapters.qq import Message, MessageSegment
@@ -5,9 +6,18 @@ from nonebot.adapters.qq.models import MessageKeyboard, MessageMarkdown
 from nonebot.adapters.qq.exception import ActionFailed
 from nonebot.log import logger
 
-from .config import config
+from .config import config, Config
 
 import random
+
+__plugin_meta__ = PluginMetadata(
+    name="龙图插件",
+    description="发送龙图",
+    usage="输入 /龙 以获取龙图",
+    type="application",
+    config=Config,
+    supported_adapters={"~qq"}
+)
 
 loong = on_command("龙")
 
