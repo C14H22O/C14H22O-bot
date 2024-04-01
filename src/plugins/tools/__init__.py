@@ -33,7 +33,7 @@ async def _user_id(event: Event):
 @backdoor.handle()
 async def _backdoor():
     markdown = MessageMarkdown.model_validate({
-        "custom_template_id": config.markdown_link_template_id,
+        "custom_template_id": config.markdown_template_id,
         "params": [
             {
                 "key": "t1", "values": ["要来逝一逝新功能吗"]
