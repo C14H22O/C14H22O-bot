@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 
 class Config(BaseModel):
-    markdown_template_id: str
+    markdown_link_template_id: str
 
 
 config = get_plugin_config(Config)
