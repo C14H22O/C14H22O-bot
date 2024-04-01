@@ -1,12 +1,11 @@
 from nonebot.plugin import PluginMetadata
 from nonebot import on_command
 from nonebot import __version__
-from nonebot import get_plugin_config
 from nonebot.adapters.qq.models import MessageKeyboard, MessageMarkdown
 from nonebot.adapters.qq import Message
 from nonebot.adapters.qq import MessageSegment
 
-from .config import Config
+from .config import Config, config
 
 __plugin_meta__ = PluginMetadata(
     name="关于插件",
@@ -22,7 +21,6 @@ about = on_command("about", aliases={"关于"})
 
 VERSION = "0.1.2"
 URL = "https://github.com/C14H22O/C14H22O-bot"
-config = get_plugin_config(Config)
 
 
 @about.handle()
