@@ -16,11 +16,11 @@ __plugin_meta__ = PluginMetadata(
     supported_adapters={"~qq"}
 )
 
-nonebot_version = __version__
-about = on_command("about", aliases={"关于"})
-
-VERSION = "0.1.2"
+nb_ver = __version__
 URL = "https://github.com/C14H22O/C14H22O-bot"
+ABOUT = f"Powered by Nonebot v{nb_ver}"
+
+about = on_command("about", aliases={"关于"})
 
 
 @about.handle()
@@ -29,9 +29,8 @@ async def _about():
         {
             "custom_template_id": config.markdown_title_template_id,
             "params": [
-                {"key": "bot_name", "values": ["C14H22O-bot"]},
-                {"key": "version", "values": [VERSION]},
-                {"key": "nonebot_version", "values": [nonebot_version]}
+                {"key": "title", "values": ["C14H22O-bot"]},
+                {"key": "content", "values": [ABOUT]}
             ]
         }
     )
