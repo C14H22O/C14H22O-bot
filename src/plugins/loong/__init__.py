@@ -34,7 +34,7 @@ async def _loong():
     logger.info(image)
     markdown = MessageMarkdown.model_validate(
         {
-            "custom_template_id": config.markdown_link_template_id,
+            "custom_template_id": config.markdown_text_template_id,
             "params": [
                 {"key": "t1", "values": ["再来一张"]}
             ]

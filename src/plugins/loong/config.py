@@ -3,7 +3,7 @@ from nonebot import get_plugin_config
 
 
 class Config(BaseModel):
-    markdown_link_template_id: str
+    markdown_text_template_id: str
     loong_data: str = """https://git.acwing.com/Est/dragon/-/raw/main/batch1/dragon_100_.jpg
 https://git.acwing.com/Est/dragon/-/raw/main/batch1/dragon_101_.jpg
 https://git.acwing.com/Est/dragon/-/raw/main/batch1/dragon_102_.jpg

@@ -21,7 +21,7 @@ links = on_command("/links", aliases={"友链"})
 @links.handle()
 async def _links():
     markdown = MessageMarkdown.model_validate({
-        "custom_template_id": config.markdown_link_template_id,
+        "custom_template_id": config.markdown_text_template_id,
         "params": [
             {
                 "key": "t1", "values": ["友链"]
