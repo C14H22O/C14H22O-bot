@@ -36,20 +36,29 @@ pipx install pdm
 nb orm upgrade
 ```
 
-根据[QQ适配器文档](https://github.com/nonebot/adapter-qq?tab=readme-ov-file#%E7%A4%BA%E4%BE%8B)填入配置。在使用“关于”插件时，发送按钮需要[申请 Markdown 能力](https://q.qq.com/qqbot/#/developer/advanced-features)，填写表单，每月月中审核。审核通过后新建一个 Markdown 模板，输入以下内容：
+根据[QQ适配器文档](https://github.com/nonebot/adapter-qq?tab=readme-ov-file#%E7%A4%BA%E4%BE%8B)填入配置。在使用“关于”插件时，发送按钮需要[申请 Markdown 能力](https://q.qq.com/qqbot/#/developer/advanced-features)，填写表单，每月月中审核。审核通过后新建 Markdown 模板，输入以下内容：
 
 ```markdown
-# 关于 {{.bot_name}}
-
-Version: {{.version}}
-
-Powered by Nonebot v{{.nonebot_version}}
+## {{.title}}
+{{.content}}
 ```
 
-将模板提交审核，审核通过后将模板 id 填入配置：
+板提交审核，审核通过后将模板 id 填入配置：
 
 ```dotenv
-MARKDOWN_TEMPLATE_ID={你的 Markdown 模板 id}
+MARKDOWN_TITLE_TEMPLATE_ID={Markdown 模板 id}
+```
+
+再新建一个模板，输入以下内容：
+
+```markdown
+{{.t1}}{{.t2}}{{.t3}}{{.t4}}{{.t5}}{{.t6}}{{.t7}}{{.t8}}{{.t9}}{{.t10}}
+```
+
+填入配置：
+
+```dotdev
+MARKDOWN_TEXT_TEMPLATE_ID={Markdown 模板 id}
 ```
 
 如果一切顺利的话，就可以输入 `nb run` 启动机器人了。
