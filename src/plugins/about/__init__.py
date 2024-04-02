@@ -27,7 +27,7 @@ URL = "https://github.com/C14H22O/C14H22O-bot"
 async def _about():
     markdown = MessageMarkdown.model_validate(
         {
-            "custom_template_id": config.markdown_template_id,
+            "custom_template_id": config.markdown_title_template_id,
             "params": [
                 {"key": "bot_name", "values": ["C14H22O-bot"]},
                 {"key": "version", "values": [VERSION]},
