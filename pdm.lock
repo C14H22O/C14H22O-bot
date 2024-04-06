@@ -1032,7 +1032,7 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-fishing"
-version = "0.2.1"
+version = "0.2.2"
 requires_python = ">=3.8"
 summary = "你甚至可以电子钓鱼"
 groups = ["default"]
@@ -1045,8 +1045,8 @@ dependencies = [
     "sqlalchemy>=2.0.27",
 ]
 files = [
-    {file = "nonebot-plugin-fishing-0.2.1.tar.gz", hash = "sha256:91d3b3eb17954839a8d1e51eadb3611bd876b53e3a469997fae20b6f7ac8ea38"},
-    {file = "nonebot_plugin_fishing-0.2.1-py3-none-any.whl", hash = "sha256:d4ffb186d9a6a549d1bda5a50976fa72e5dc7b85d1e714dcd7427ce85aaf0826"},
+    {file = "nonebot-plugin-fishing-0.2.2.tar.gz", hash = "sha256:c9963f3da98712a2044df0e4060c2a45794425acc63bf40296caf695b2349e68"},
+    {file = "nonebot_plugin_fishing-0.2.2-py3-none-any.whl", hash = "sha256:e21ae2b49c703d65951720e30731f453695a3c41d186bd5c3f681ace4d178017"},
 ]
 
 [[package]]
@@ -1107,22 +1107,6 @@ files = [
 name = "nonebot-plugin-orm"
 version = "0.7.1"
 extras = ["aiosqlite"]
-requires_python = "<4.0,>=3.8"
-summary = "SQLAlchemy ORM support for nonebot"
-groups = ["default"]
-dependencies = [
-    "nonebot-plugin-orm==0.7.1",
-    "sqlalchemy[aiosqlite]",
-]
-files = [
-    {file = "nonebot_plugin_orm-0.7.1-py3-none-any.whl", hash = "sha256:8e663094b0521a4838a4f7e65d53b603bfc5da77bafe9a89c912385918efb569"},
-    {file = "nonebot_plugin_orm-0.7.1.tar.gz", hash = "sha256:e6ae8f93e7e2a0f3de40a4f3dbfd48684654468aea1ea3ca31009fa5aaff42d8"},
-]
-
-[[package]]
-name = "nonebot-plugin-orm"
-version = "0.7.1"
-extras = ["sqlite"]
 requires_python = "<4.0,>=3.8"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["default"]
