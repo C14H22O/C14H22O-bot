@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:9786f6312abf2511dc04350c616f1d2c506662e71660eb2373f84790657e46b7"
+content_hash = "sha256:442f86662eb48172bf1b14513fb6dbb8be8b6090baf71def595ba36d00f6b83c"
 
 [[package]]
 name = "aiodns"
@@ -1217,6 +1217,22 @@ files = [
 ]
 
 [[package]]
+name = "nonebot-plugin-orm"
+version = "0.7.1"
+extras = ["sqlite"]
+requires_python = "<4.0,>=3.8"
+summary = "SQLAlchemy ORM support for nonebot"
+groups = ["default"]
+dependencies = [
+    "nonebot-plugin-orm==0.7.1",
+    "sqlalchemy[aiosqlite]",
+]
+files = [
+    {file = "nonebot_plugin_orm-0.7.1-py3-none-any.whl", hash = "sha256:8e663094b0521a4838a4f7e65d53b603bfc5da77bafe9a89c912385918efb569"},
+    {file = "nonebot_plugin_orm-0.7.1.tar.gz", hash = "sha256:e6ae8f93e7e2a0f3de40a4f3dbfd48684654468aea1ea3ca31009fa5aaff42d8"},
+]
+
+[[package]]
 name = "nonebot2"
 version = "2.2.1"
 requires_python = ">=3.8,<4.0"
@@ -1239,12 +1255,13 @@ files = [
 [[package]]
 name = "nonebot2"
 version = "2.2.1"
-extras = ["aiohttp"]
+extras = ["aiohttp", "httpx"]
 requires_python = ">=3.8,<4.0"
 summary = "An asynchronous python bot framework."
 groups = ["default"]
 dependencies = [
     "aiohttp[speedups]<4.0.0,>=3.9.0b0",
+    "httpx[http2]<1.0.0,>=0.20.0",
     "nonebot2==2.2.1",
 ]
 files = [
@@ -1263,22 +1280,6 @@ dependencies = [
     "fastapi<1.0.0,>=0.93.0",
     "nonebot2==2.2.1",
     "uvicorn[standard]<1.0.0,>=0.20.0",
-]
-files = [
-    {file = "nonebot2-2.2.1-py3-none-any.whl", hash = "sha256:88f2bb456bf90922925bbe489a9effe3b09300f3aa50bfa75ee50d8a83d7330f"},
-    {file = "nonebot2-2.2.1.tar.gz", hash = "sha256:fe57692300571b00724999238545d8d894523460e6835a11b326a2e1cdf98fc4"},
-]
-
-[[package]]
-name = "nonebot2"
-version = "2.2.1"
-extras = ["httpx"]
-requires_python = ">=3.8,<4.0"
-summary = "An asynchronous python bot framework."
-groups = ["default"]
-dependencies = [
-    "httpx[http2]<1.0.0,>=0.20.0",
-    "nonebot2==2.2.1",
 ]
 files = [
     {file = "nonebot2-2.2.1-py3-none-any.whl", hash = "sha256:88f2bb456bf90922925bbe489a9effe3b09300f3aa50bfa75ee50d8a83d7330f"},
