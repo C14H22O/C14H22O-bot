@@ -30,6 +30,12 @@ pdm install
 pipx install pdm
 ```
 
+如果访问官方 PyPI 源的速度较慢，可以尝试使用国内源：
+
+```bash
+pdm config pypi.url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 初始化数据库：
 
 ```bash
