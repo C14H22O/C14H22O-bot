@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:442f86662eb48172bf1b14513fb6dbb8be8b6090baf71def595ba36d00f6b83c"
+content_hash = "sha256:44a5925b56ba6a291430bcad3c05835e949b7db7a403107cd10843d1618d559b"
 
 [[package]]
 name = "aiodns"
@@ -285,7 +285,7 @@ files = [
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.6"
+version = "1.8.9"
 requires_python = ">=3.8"
 summary = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 groups = ["default"]
@@ -295,23 +295,23 @@ dependencies = [
     "typing-extensions>=4.5.0",
 ]
 files = [
-    {file = "arclet_alconna-1.8.6-py3-none-any.whl", hash = "sha256:bac7f075328365b9727ae75eab83bb3884cbca40a725a6b2367d5af6c30ce6b5"},
-    {file = "arclet_alconna-1.8.6.tar.gz", hash = "sha256:ae0006335c41d1ad847f7a847f99523720c2a3605259833066133f08bc8feaf0"},
+    {file = "arclet_alconna-1.8.9-py3-none-any.whl", hash = "sha256:66f35bf8e93cc20c1d7bdbc10fca746a82ab9b96e60904e6d392dd7e5df51860"},
+    {file = "arclet_alconna-1.8.9.tar.gz", hash = "sha256:f604312f8b62e3d361d0bb9583c9f2adac00d1af65c077922f553d7c5d803259"},
 ]
 
 [[package]]
 name = "arclet-alconna-tools"
-version = "0.7.1"
+version = "0.7.2"
 requires_python = ">=3.8"
 summary = "Builtin Tools for Alconna"
 groups = ["default"]
 dependencies = [
-    "arclet-alconna>=1.8.6",
+    "arclet-alconna>=1.8.7",
     "nepattern<1.0.0,>=0.6.5",
 ]
 files = [
-    {file = "arclet-alconna-tools-0.7.1.tar.gz", hash = "sha256:d27d08f76d8ba807aa624725944b5404f86adef94f1536db5de2a40aad2c959b"},
-    {file = "arclet_alconna_tools-0.7.1-py3-none-any.whl", hash = "sha256:0a972f5e843522216cbbfe0e77b715a673dd30e5146d3b235c20d15d1875a1d6"},
+    {file = "arclet_alconna_tools-0.7.2-py3-none-any.whl", hash = "sha256:69739aab07c039537cd72b4ab6d37aff896cd794031a8ff8157e5f85e842ed9b"},
+    {file = "arclet_alconna_tools-0.7.2.tar.gz", hash = "sha256:98a6aad6284efd8af34b10cd35667bd5885f530327b9ac9ea2944bf6325d0d6f"},
 ]
 
 [[package]]
@@ -1112,24 +1112,24 @@ files = [
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.41.1"
+version = "0.42.4"
 requires_python = ">=3.8"
 summary = "Alconna Adapter for Nonebot"
 groups = ["default"]
 dependencies = [
-    "arclet-alconna-tools>=0.7.0",
-    "arclet-alconna>=1.8.5",
+    "arclet-alconna-tools>=0.7.2",
+    "arclet-alconna>=1.8.7",
     "nepattern>=0.6.5",
     "nonebot2>=2.2.1",
 ]
 files = [
-    {file = "nonebot_plugin_alconna-0.41.1-py3-none-any.whl", hash = "sha256:835ab5f2b3b2688bc90666318ff2f0aab03d2884847b815aa62b218009cc1cf8"},
-    {file = "nonebot_plugin_alconna-0.41.1.tar.gz", hash = "sha256:9041a961d0678dccfc9cbea8e415fd4fae639aabd4b6e6f2e82c99960293b6a3"},
+    {file = "nonebot_plugin_alconna-0.42.4-py3-none-any.whl", hash = "sha256:8dd843f37c1d4a13bf58966a6d592c7f685ec6346954d774b12b53e0864b98b0"},
+    {file = "nonebot_plugin_alconna-0.42.4.tar.gz", hash = "sha256:5fe0ea1374bacbf2eaae6eb4a0e41fd8ebc983bab6f0224a4e64fba5984e219d"},
 ]
 
 [[package]]
 name = "nonebot-plugin-fishing"
-version = "0.2.2"
+version = "0.2.3"
 requires_python = ">=3.8"
 summary = "你甚至可以电子钓鱼"
 groups = ["default"]
@@ -1142,13 +1142,13 @@ dependencies = [
     "sqlalchemy>=2.0.27",
 ]
 files = [
-    {file = "nonebot-plugin-fishing-0.2.2.tar.gz", hash = "sha256:c9963f3da98712a2044df0e4060c2a45794425acc63bf40296caf695b2349e68"},
-    {file = "nonebot_plugin_fishing-0.2.2-py3-none-any.whl", hash = "sha256:e21ae2b49c703d65951720e30731f453695a3c41d186bd5c3f681ace4d178017"},
+    {file = "nonebot_plugin_fishing-0.2.3-py3-none-any.whl", hash = "sha256:6cf75d8d03055497798ddde387f7c9256767ac474be41e420be9a17d76db7bde"},
+    {file = "nonebot_plugin_fishing-0.2.3.tar.gz", hash = "sha256:b9eb17a15cbb1272e38fed497de8253d5e71ab46579d9c13487875d34e0fa298"},
 ]
 
 [[package]]
 name = "nonebot-plugin-kawaii-status"
-version = "0.1.3"
+version = "0.1.4"
 requires_python = ">=3.8"
 summary = "NoneBot2 服务器状态查看插件 / View server status for NoneBot2"
 groups = ["default"]
@@ -1157,10 +1157,11 @@ dependencies = [
     "nonebot2[fastapi]>=2.2.0",
     "pillow>=10.2.0",
     "psutil>=5.9.8",
+    "py-cpuinfo>=9.0.0",
 ]
 files = [
-    {file = "nonebot_plugin_kawaii_status-0.1.3-py3-none-any.whl", hash = "sha256:083f22ac32d2715104539ff1a4948468da8b3e3f4bbfc7bb0cd336b68bd047d5"},
-    {file = "nonebot_plugin_kawaii_status-0.1.3.tar.gz", hash = "sha256:83204d84cbca973866c4100594ac05c4fb4af375aab64c560282cc0cf9cdace8"},
+    {file = "nonebot_plugin_kawaii_status-0.1.4-py3-none-any.whl", hash = "sha256:fc5745b43ba95eee5fc607efa3fdef74fdcc1beb571fece412529337cec8ad3a"},
+    {file = "nonebot_plugin_kawaii_status-0.1.4.tar.gz", hash = "sha256:f846f8c7cd8c508dd53d28e728ecf8a6fa6583a5424c0dddcfbda1ccdf6841e3"},
 ]
 
 [[package]]
@@ -1203,28 +1204,13 @@ files = [
 [[package]]
 name = "nonebot-plugin-orm"
 version = "0.7.1"
-extras = ["aiosqlite"]
+extras = ["aiosqlite", "sqlite"]
 requires_python = "<4.0,>=3.8"
 summary = "SQLAlchemy ORM support for nonebot"
 groups = ["default"]
 dependencies = [
     "nonebot-plugin-orm==0.7.1",
     "sqlalchemy[aiosqlite]",
-]
-files = [
-    {file = "nonebot_plugin_orm-0.7.1-py3-none-any.whl", hash = "sha256:8e663094b0521a4838a4f7e65d53b603bfc5da77bafe9a89c912385918efb569"},
-    {file = "nonebot_plugin_orm-0.7.1.tar.gz", hash = "sha256:e6ae8f93e7e2a0f3de40a4f3dbfd48684654468aea1ea3ca31009fa5aaff42d8"},
-]
-
-[[package]]
-name = "nonebot-plugin-orm"
-version = "0.7.1"
-extras = ["sqlite"]
-requires_python = "<4.0,>=3.8"
-summary = "SQLAlchemy ORM support for nonebot"
-groups = ["default"]
-dependencies = [
-    "nonebot-plugin-orm==0.7.1",
     "sqlalchemy[aiosqlite]",
 ]
 files = [
@@ -1377,6 +1363,16 @@ files = [
     {file = "psutil-5.9.8-cp37-abi3-win_amd64.whl", hash = "sha256:8db4c1b57507eef143a15a6884ca10f7c73876cdf5d51e713151c1236a0e68cf"},
     {file = "psutil-5.9.8-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:d16bbddf0693323b8c6123dd804100241da461e41d6e332fb0ba6058f630f8c8"},
     {file = "psutil-5.9.8.tar.gz", hash = "sha256:6be126e3225486dff286a8fb9a06246a5253f4c7c53b475ea5f5ac934e64194c"},
+]
+
+[[package]]
+name = "py-cpuinfo"
+version = "9.0.0"
+summary = "Get CPU info with pure Python"
+groups = ["default"]
+files = [
+    {file = "py-cpuinfo-9.0.0.tar.gz", hash = "sha256:3cdbbf3fac90dc6f118bfd64384f309edeadd902d7c8fb17f02ffa1fc3f49690"},
+    {file = "py_cpuinfo-9.0.0-py3-none-any.whl", hash = "sha256:859625bc251f64e21f077d099d4162689c762b5d6a4c3c97553d56241c9674d5"},
 ]
 
 [[package]]
