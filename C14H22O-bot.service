@@ -1,0 +1,14 @@
+[Unit]
+Description=一个没有什么用的 QQ 官方 bot
+After=network.target
+
+[Service]
+WorkingDirectory=/root/C14H22O-bot
+ExecStart=/bin/bash -c 'nb run'
+Restart=always
+User=root
+Group=root
+Environment=PATH=/root/.local/bin
+
+[Install]
+WantedBy=multi-user.target
