@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:44a5925b56ba6a291430bcad3c05835e949b7db7a403107cd10843d1618d559b"
+content_hash = "sha256:699718e42537b14e3115c324d168b1b9ff37f1d52dda5cd6e1e165594589699e"
 
 [[package]]
 name = "aiodns"
@@ -1178,6 +1178,20 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_localstore-0.6.0-py3-none-any.whl", hash = "sha256:59f0126d85680601166a9a62cca886a33e1b0a8fef7cd67fff52747bd47f42d3"},
     {file = "nonebot_plugin_localstore-0.6.0.tar.gz", hash = "sha256:7eb4039cb2e76c54b860b2b98f2b90cd25284919603e81dedec367f215662fcd"},
+]
+
+[[package]]
+name = "nonebot-plugin-logpile"
+version = "0.2.1"
+requires_python = ">=3.8"
+summary = "NoneBot2 local log files"
+groups = ["default"]
+dependencies = [
+    "nonebot2>=2.0.0rc4",
+]
+files = [
+    {file = "nonebot-plugin-logpile-0.2.1.tar.gz", hash = "sha256:f81069ba5045ba76d5184f101a6b49b94388ff2921cc70de937506bfc1c3188b"},
+    {file = "nonebot_plugin_logpile-0.2.1-py3-none-any.whl", hash = "sha256:1f6c169265b4fb38eb1098303b23d6e7986dc507ab9919f1dd4e0784ffca0ae0"},
 ]
 
 [[package]]
